@@ -1,0 +1,342 @@
+ /* body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  .converter {
+    margin-top: 100px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 0 auto;
+  }
+  label {
+    font-weight: bold;
+  }
+  input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  } */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.row1 {
+    display: inline-flex;
+    margin-left: -32px;
+    margin-top: -40px;
+    overflow: hidden;
+}
+.row_altline2 {
+    display: inline-flex;
+    margin-left: -73px;
+    margin-top: -27px;
+    overflow: hidden;
+}
+.row_line2{
+    display: inline-flex;
+    margin-left: -32px;
+    margin-top: -27px;
+    overflow: hidden;
+}
+.row_altline3 {
+    display: inline-flex;
+    margin-left: -73px;
+    margin-top: -27px;
+    overflow: hidden;
+}
+.row_line3{
+    display: inline-flex;
+    margin-left: -32px;
+    margin-top: -27px;
+    overflow: hidden;
+}
+.row_altline4 {
+    display: inline-flex;
+    margin-left: -73px;
+    margin-top: -27px;
+    overflow: hidden;
+}
+.row_line4{
+    display: inline-flex;
+    margin-left: -32px;
+    margin-top: -27px;
+    overflow: hidden;
+}
+.row_altline5 {
+    display: inline-flex;
+    margin-left: -73px;
+    margin-top: -27px;
+    overflow: hidden;
+}
+.row_line5{
+    display: inline-flex;
+    margin-left: -32px;
+    margin-top: -27px;
+    overflow: hidden;
+}
+.row_altline6 {
+    display: inline-flex;
+    margin-left: -73px;
+    margin-top: -27px;
+    overflow: hidden;
+}
+.row_line6{
+    display: inline-flex;
+    margin-left: -32px;
+    margin-top: -27px;
+    overflow: hidden;
+}
+.row_altline7 {
+    display: inline-flex;
+    margin-left: -73px;
+    margin-top: -27px;
+    overflow: hidden;
+}
+.row_line7{
+    display: inline-flex;
+    margin-left: -32px;
+    margin-top: -27px;
+    overflow: hidden;
+}
+.row_altline8 {
+    display: inline-flex;
+    margin-left: -73px;
+    margin-top: -27px;
+    overflow: hidden;
+}
+.row_line8{
+    display: inline-flex;
+    margin-left: -32px;
+    margin-top: -27px;
+    overflow: hidden;
+}
+.row_altline9 {
+    display: inline-flex;
+    margin-left: -73px;
+    margin-top: -27px;
+    overflow: hidden;
+}
+.row_line9{
+    display: inline-flex;
+    margin-left: -32px;
+    margin-top: -27px;
+    overflow: hidden;
+}
+.row_altline10 {
+    display: inline-flex;
+    margin-left: -73px;
+    margin-top: -27px;
+    overflow: hidden;
+}
+.row_line10{
+    display: inline-flex;
+    margin-left: -32px;
+    margin-top: -27px;
+    overflow: hidden;
+}
+/* .row:nth-child(even) {
+    margin-left: 1px;
+} */
+
+.hexagon {
+    position: relative;
+    height: 90px;
+    width: 80px;
+    background: #111;
+    margin: 1px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transition: 2s;
+}
+
+.hexagon:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    pointer-events: none;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.hexagon:hover {
+    transition: 0s;
+    background: #0f0;
+    cursor: alias;
+}
+.container{
+    position: absolute;
+    max-width: 450px;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0 85px 100px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,.1) ;
+    font-family: sans-serif;
+    padding: 20px;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+/* .container:hover{
+    z-index: 0;
+}
+.box:hover{
+    z-index: 5;
+} */
+.title{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 0px;
+    
+}
+
+.Temperature-icon{
+    font-size: 45px;
+    color: #fff;
+    top: 5px;
+    position: relative;
+}
+
+h1 span{
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 27px;
+    /* font-weight: 1800; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#celsius, #fahrenheit, #kelvin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    /* width: 20px; */
+}
+
+input{
+    flex: 4;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 8px 0 0 8px;
+    padding: 0 10px;
+}
+
+
+/* for chrome, safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+/* for Mozila firefox */
+input{
+    -moz-appearance: textfield;
+}
+
+
+.icon{
+    flex: 1;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 25px;
+    background: #4d5967;
+    color: #fff;
+    border-radius: 0 8px 8px 0;
+    width: 40px;
+    margin-left: 5px;
+}
+
+
+.button{
+    width: 500px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+.button button{
+    /* position: fixed;
+    display: flex; */
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s;
+    background: transparent;
+    box-shadow: 0 85px 100px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,.1) ;
+}
+
+.button button:hover{
+    background:rgba(255,255,255,.2);
+    color:#fff;
+    box-shadow:  0 0 80px 10px rgba(255,255,255,0.5);
+    margin: 10px;
+    /* margin-left: -10px;
+    margin-right: -10px;
+    transition: 20s;
+    position: fixed; */
+}
